@@ -1,4 +1,2 @@
-source 'https://rubygems.org'
-
-gem 'rspec'
-gem 'pry'
+require 'rspec'
+require ("./lib/anagram.rb")
