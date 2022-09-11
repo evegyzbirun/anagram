@@ -6,22 +6,32 @@ require 'pry'
 # "These words have no letter matches and are antigrams.  "hi" has no matches with "bye".
 # Spaces and punctuation shouldn't count (so they should be removed).
 # =~ /[aeiou]/
+# binding.pry
+# irb(main):006:0> vowels = ["a", "e", "i", "o", "u", "y"]
+# => ["a", "e", "i", "o", "u", "y"]
+# irb(main):007:0>  ["h","i"].any? { |n| n = vowels }
+# => true
+
 class Input 
+  attr_reader :inputOne, :inputTwo
   def initialize(inputOne, inputTwo)
     @inputOne = inputOne
     @inputTwo = inputTwo
   end
   def anagram?
-  # inputOne = "Lives"
-  # inputTwo = "Evils"
-    string_one_check = @inputOne.gsub(/[^A-Za-z0-9]/, '').downcase.chars.sort
-    string_two_check = @inputTwo.gsub(/[^A-Za-z0-9]/, '').downcase.chars.sort
+ 
+    array_one_check = @inputOne.gsub(/[^A-Za-z0-9]/, '').downcase
+    array_two_check = @inputTwo.gsub(/[^A-Za-z0-9]/, '').downcase
     
-     if (string_one_check === string_two_check)
-    return "It is anagram."
+  
+    
+   
+     if (array_one_check == array_two_check) 
+      
+      return "It is anagram."
 
      else 
-    return "It is antigram."
+      return "It is antigram."
   
      end
     
