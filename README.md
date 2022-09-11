@@ -2,7 +2,7 @@
 
 #### by _**(Evgeny Zbirun)**_
 
-#### The application check two string inputs
+#### The application check two string inputs if they are anagrams or antigrams.
 
 
 
