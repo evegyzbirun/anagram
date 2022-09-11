@@ -19,7 +19,7 @@ class Input
      if (string_one_check == string_two_check)
     return "It is anagram."
      else
-
+    return "It is antigram."
      return false
      end
     
