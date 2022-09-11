@@ -12,5 +12,16 @@ class Input
     @inputTwo = inputTwo
   end
   def anagram?
+  # inputOne = "Lives"
+  # inputTwo = "Evils"
+    string_one_check = @inputOne.gsub(/[^A-Za-z0-9]/, '').downcase.chars.sort
+    string_two_check = @inputTwo.gsub(/[^A-Za-z0-9]/, '').downcase.chars.sort
+     if (string_one_check == string_two_check)
+    return "It is anagram."
+     else
+
+     return false
+     end
+    
   end
 end
