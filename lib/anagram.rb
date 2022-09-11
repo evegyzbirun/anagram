@@ -19,12 +19,12 @@ class Input
     @inputTwo = inputTwo.gsub(/[^A-Za-z0-9]/, '').downcase
   end
   def anagram?
-    if (@inputOne =~ /[aeiou]/) && (@inputTwo =~ /[aeiou]/)
+    if !(@inputOne =~ /[aeiou]/) && !(@inputTwo =~ /[aeiou]/)
       return "These inputs are not real words."
-    elsif()
+    elsif(@inputOne.chars.sort == @inputTwo.chars.sort)
+      return "These inputs are anagrams."
+    elsif(@inputOne.chars.sort != @inputTwo.chars.sort)
       return "These inputs are antigrams."
-    elsif()
-      return "These words have no letter matches and are antigrams."
     else ()
       return "These inputs are not real words."
     end
