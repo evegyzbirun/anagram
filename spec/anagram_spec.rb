@@ -13,7 +13,7 @@ end
 describe('#anagram?') do
   it("is it antigrams?") do
     test_subject1 = "Lites"
-    test_subject2 = "Evils"
+    test_subject2 = "Evil"
     my_ana = Input.new(test_subject1, test_subject2)
     expect(my_ana.anagram?).to(eq("These inputs are antigrams."))
   end 
@@ -31,7 +31,7 @@ end
 describe('#anagram?') do
   it("different words") do
     test_subject1 = "sav"
-    test_subject2 = "vfss"
+    test_subject2 = "dft"
     my_ana = Input.new(test_subject1, test_subject2)
     expect(my_ana.anagram?).to(eq("These words have no letter matches and are antigrams."))
   end 

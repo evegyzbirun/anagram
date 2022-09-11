@@ -23,11 +23,14 @@ class Input
       return "These inputs are not real words."
     elsif(@inputOne.chars.sort == @inputTwo.chars.sort)
       return "These inputs are anagrams."
-    elsif(@inputOne.chars.sort != @inputTwo.chars.sort)
+    elsif (!@inputOne.chars.sort & !@inputTwo.chars.sort)
       return "These inputs are antigrams."
     else ()
-      return "These inputs are not real words."
+    
+      return "These words have no letter matches and are antigrams."
     end
+   
     
   end
+   
 end
