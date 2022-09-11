@@ -5,7 +5,7 @@ require 'pry'
 # "pkmn" isn't an anagram of "kmpn" because "pkmn" isn't a real word.) A word must contain a vowel (a, i, e, o, u) or y. 
 # "These words have no letter matches and are antigrams.  "hi" has no matches with "bye".
 # Spaces and punctuation shouldn't count (so they should be removed).
-
+# =~ /[aeiou]/
 class Input 
   def initialize(inputOne, inputTwo)
     @inputOne = inputOne
@@ -16,9 +16,10 @@ class Input
   # inputTwo = "Evils"
     string_one_check = @inputOne.gsub(/[^A-Za-z0-9]/, '').downcase.chars.sort
     string_two_check = @inputTwo.gsub(/[^A-Za-z0-9]/, '').downcase.chars.sort
-     if (string_one_check == string_two_check)
-      vowels = 'aeiou'
+    
+     if (string_one_check === string_two_check)
     return "It is anagram."
+
      else 
     return "It is antigram."
   
