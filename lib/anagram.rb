@@ -16,7 +16,7 @@ class Input
   # inputTwo = "Evils"
     string_one_check = @inputOne.gsub(/[^A-Za-z0-9]/, '').downcase.chars.sort
     string_two_check = @inputTwo.gsub(/[^A-Za-z0-9]/, '').downcase.chars.sort
-     if (string_one_check == string_two_check)
+     if (string_one_check == string_two_check) && (string_one_check.match(/\A+[aeiou]/) && string_two_check.match(/\A+[aeiou]/))
     return "It is anagram."
      else
     return "It is antigram."
