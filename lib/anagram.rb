@@ -7,8 +7,9 @@ require 'pry'
 # Spaces and punctuation shouldn't count (so they should be removed).
 
 class Input 
-  def initialize(input)
-    @input = input
+  def initialize(inputOne, inputTwo)
+    @inputOne = inputOne
+    @inputTwo = inputTwo
   end
   def anagram?
   end
