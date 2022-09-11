@@ -21,8 +21,8 @@ end
 
 describe('#anagram?') do
   it("it is antigram if no vowels") do
-    test_subject1 = "Lites"
-    test_subject2 = "Evils"
+    test_subject1 = "Lts"
+    test_subject2 = "vls"
     my_ana = Input.new(test_subject1, test_subject2)
     expect(my_ana.anagram?).to(eq("It is antigram."))
   end 
