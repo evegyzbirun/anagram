@@ -6,13 +6,11 @@
 
 
 
-#### the project link to github: https://github.com/evegyzbirun/
+#### the project link to github: https://github.com/evegyzbirun/anagram
 
 ## Technologies Used:
 * VS code
 * Git console
-* JavaScript
-* html
 * Ruby
 * rspec
 
