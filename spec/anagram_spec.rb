@@ -54,3 +54,4 @@ describe('#anagram?') do
     expect(my_ana.anagram?).to(eq("These inputs are anagrams."))
   end 
 end
+

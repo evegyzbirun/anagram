@@ -20,7 +20,7 @@
 2. open with Visual Studio Code.
 3. run(bundle)
 4. run $ gem install rspec from your terminal for tests
-5. run ruby anagram_script.rb
+5. run ruby anagram_script.rb in gitbash
  
 
 
