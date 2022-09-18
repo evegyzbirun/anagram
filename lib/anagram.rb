@@ -9,7 +9,7 @@ class Input
   end
 
   def anagram?
-    if !(@inputOne =~ /[aeiou]/) && !(@inputTwo =~ /[aeiou]/)
+    if !(@inputOne =~ /[aeiouy]/) || !(@inputTwo =~ /[aeiouy]/)
       return "These inputs are not real words."
     elsif(@inputOne.chars.sort == @inputTwo.chars.sort)
       return "These inputs are anagrams."
