@@ -45,3 +45,12 @@ describe('#anagram?') do
     expect(my_ana.anagram?).to(eq("These inputs are not real words."))
   end 
 end
+
+describe('#anagram?') do
+  it("few words in each input") do
+    test_subject1 = "Fourth of July"
+    test_subject2 = "joyful Fourth"
+    my_ana = Input.new(test_subject1, test_subject2)
+    expect(my_ana.anagram?).to(eq("These inputs are not real words."))
+  end 
+end
